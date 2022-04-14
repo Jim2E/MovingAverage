@@ -1,4 +1,4 @@
-# MovingAverage
+# n-day Moving Average of a Cryptocurrency
 
 Visualize the average price of a cryptocurrency for the last n days. 
 
