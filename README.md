@@ -1,6 +1,7 @@
 # n-day Moving Average of a Cryptocurrency
 
-Visualize the average price of a cryptocurrency for the last n days. Below is the 500d MA for XMR: 
+Visualize the average price of a cryptocurrency for the last n days. Below is the 500d MA for XMR:
+
 python view.py Binance_XMRUSDT_d.csv 600
 
 
