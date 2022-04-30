@@ -6,7 +6,7 @@ from matplotlib import cm
 import matplotlib.lines as mlines
 
 # Run with  $ python view.py [CSV DATA NAME].csv [results].csv
-# example: python view.py Binance_LINKUSDT_d.csv
+# example: python view.py Binance_LINKUSDT_d.csv n(# of days)
 
 df = pd.read_csv(str(sys.argv[1]), skiprows=1)
 close = df.iloc[:, 6].tolist()
@@ -15,7 +15,7 @@ dates = df.iloc[:, 1].tolist()
 dates.reverse()
 # print(len(close))
 
-period = 35
+period = int(sys.argv[2])
 intervals = np.ceil(len(close)/period)
 # print(intervals)
 
